@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e3edf7;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+h1 {
+  position: absolute;
+  top: 5%;
+}
+
+.skill {
+  width: 160px;
+  height: 160px;
+  /* background: cornflowerblue; */
+  position: relative;
+}
+
+.outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+              -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+              inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+              -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+              0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+              0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number1, #number2, #number3, #number4 {
+  font-weight: 600;
+  color: #555;
+  text-align: center;
+}
+
+.python {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: python 2s linear forwards;
+}
+
+@keyframes python {
+  100% {
+    stroke-dashoffset: 146.32;
+  }
+}
+
+.java {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: java 2s linear forwards;
+}
+
+@keyframes java {
+  100% {
+    stroke-dashoffset: 236;
+  }
+}
+
+.sql {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: sql 2s linear forwards;
+}
+
+@keyframes sql {
+  100% {
+    stroke-dashoffset: 132.16;
+  }
+}
+
+.clang {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: clang 2s linear forwards;
+}
+
+@keyframes clang {
+  100% {
+    stroke-dashoffset: 103.84;
+  }
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

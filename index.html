@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Neomorphism Progress Bar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  </head>
+  <body>
+    <h1>Various Skill Progress Bars</h1>
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="number1">
+
+          </div>
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+        <defs>
+          <linearGradient id="GradientColor">
+            <stop offset="0%" stop-color="#e91e63" />
+            <stop offset="100%" stop-color="#673ab7" />
+          </linearGradient>
+        </defs>
+        <circle class="python" cx="80" cy="80" r="70" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="number2">
+
+          </div>
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+        <defs>
+          <linearGradient id="GradientColor">
+            <stop offset="0%" stop-color="#e91e63" />
+            <stop offset="100%" stop-color="#673ab7" />
+          </linearGradient>
+        </defs>
+        <circle class="java" cx="80" cy="80" r="70" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="number3">
+
+          </div>
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+        <defs>
+          <linearGradient id="GradientColor">
+            <stop offset="0%" stop-color="#e91e63" />
+            <stop offset="100%" stop-color="#673ab7" />
+          </linearGradient>
+        </defs>
+        <circle class="sql" cx="80" cy="80" r="70" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="number4">
+
+          </div>
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+        <defs>
+          <linearGradient id="GradientColor">
+            <stop offset="0%" stop-color="#e91e63" />
+            <stop offset="100%" stop-color="#673ab7" />
+          </linearGradient>
+        </defs>
+        <circle class="clang" cx="80" cy="80" r="70" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <script>
+      let num1 = document.getElementById('number1');
+      let count1 = 0;
+
+      setInterval(() => {
+        if (count1 == 69) {
+          clearInterval();
+        }
+        else {
+          count1 += 1;
+          num1.innerHTML = "Python<br>" + count1 + "%";
+        }
+      }, 30);
+
+      let num2 = document.getElementById('number2');
+      let count2 = 0;
+
+      setInterval(() => {
+        if (count2 == 50) {
+          clearInterval();
+        }
+        else {
+          count2 += 1;
+          num2.innerHTML = "Java<br>" + count2 + "%";
+        }
+      }, 40);
+
+      let num3 = document.getElementById('number3');
+      let count3 = 0;
+
+      setInterval(() => {
+        if (count3 == 72) {
+          clearInterval();
+        }
+        else {
+          count3 += 1;
+          num3.innerHTML = "SQL<br>" + count3 + "%";
+        }
+      }, 28);
+
+      let num4 = document.getElementById('number4');
+      let count4 = 0;
+
+      setInterval(() => {
+        if (count4 == 78) {
+          clearInterval();
+        }
+        else {
+          count4 += 1;
+          num4.innerHTML = "C<br>" + count4 + "%";
+        }
+      }, 26);
+
+    </script>
+  </body>
+</html>
